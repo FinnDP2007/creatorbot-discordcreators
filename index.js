@@ -63,7 +63,7 @@ client.on("message", async message => {
  
     var messageArray = message.content.split(" ");
 
-    if(!message.content.startWitch(prefix)) return;
+    if(!message.content.startWith(prefix)) return;
      
     var command = messageArray[0];
 
