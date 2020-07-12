@@ -3,6 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async(client, message, args) => {
     var botinfoEmbed = new discord.MessageEmbed()
     .setTitle('🤖 Bot Info 🤖')
+    .setThumbnail(this.client.user.displayAvatarURL({ format: "png" }))
     .setDescription("Bekijk hier alle bot info")
     .setColor("#78A2D2")
     .addField("Bot naam", client.user.username)
